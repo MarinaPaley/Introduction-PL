@@ -1,0 +1,9 @@
+[diff "word"] 
+    textconv = strings
+[diff "excel"]
+    textconv = strings
+[diff "zip"]
+    textconv = unzip -c -a
+[diff "pdf2txt"]
+    textconv=pdf2txt
+    binary = true
