@@ -54,12 +54,12 @@ int main()
     return 0;
 }
 
-double getSide(double a, double b, double angle)
+double getSide(const double a, const double b, const double angle)
 {
     return 42;
 }
 
-double getArea(double a, double b, double c)
+double getArea(const double a, const double b, const double c)
 {
     return 42;
 }
