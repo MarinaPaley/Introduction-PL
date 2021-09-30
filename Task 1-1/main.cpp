@@ -6,23 +6,23 @@
 //using namespace std;
 
 /**
- * \brief Это функция выполняет...
+ * \brief Это функция выполняет вычисление по заданной формуле
  * \param x параметр х
  * \param y параметр y
- * \return 0  в случае успеха
+ * \return значение функции
  */
 double getA(const double x, const double y);
 /**
- * \brief Это функция выполняет...
+ * \brief Это функция выполняет вычисление по заданной формуле
  * \param x параметр х
  * \param y параметр y
  * \param z параметр z
- * \return 0  в случае успеха
+ * \return 0  значение функции
  */
 double getB(const double x, const double y, const double z);
 
 /**
- * \brief Это функция выполняет...
+ * \brief Точка входа в программу
  * \return 0  в случае успеха
  */
 int main()
@@ -35,7 +35,8 @@ int main()
     const double b = getB(x, y, z);
 
 
-    std::cout << std::setprecision(9) << "x = " << x << " y = " << y << " z = " << z << " a = " << a << " b = " << b  << std::endl;
+    std::cout << std::setprecision(9) << "x = " << x << " y = " << y << " z = " << z 
+        << " a = " << a << " b = " << b  << std::endl;
     return 0;
 }
 
