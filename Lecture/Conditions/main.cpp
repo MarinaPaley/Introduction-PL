@@ -84,7 +84,7 @@ int main()
     return 0;
 }
 
-bool isZero(double x, const double epsilon)
+bool isZero(const double x, const double epsilon)
 {
     return areEqual(x, 0, epsilon);
 }
@@ -99,7 +99,7 @@ double tg(const double x)
     return sin(x)/cos(x);
 }
 
-double cotg(double x)
+double cotg(const double x)
 {
     return cos(x) / sin(x);
 }
@@ -109,7 +109,7 @@ bool canCalculateTg(const double x, const double epsilon)
     return !isZero(cos(x), epsilon);
 }
 
-bool canCalculateCtg(double x, const double epsilon)
+bool canCalculateCtg(const double x, const double epsilon)
 {
     return !isZero(sin(x), epsilon);
 }
