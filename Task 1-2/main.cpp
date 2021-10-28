@@ -51,6 +51,7 @@ int main()
     std::cout << "Третья сторона = " << sideC << "\n";
     std::cout << "Площадь треугольника  " << area << "\n";
     std::cout << "Радиус описанной окружности " << radius << "\n";
+
     return 0;
 }
 
