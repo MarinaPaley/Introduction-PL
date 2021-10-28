@@ -28,17 +28,24 @@ bool is_average_integer(const int first_number, const int second_number);
  */
 int main()
 {
-    const auto first = read_number("Введите первое натуральное число ");
+    try
+    {
+        const auto first = read_number("Введите первое натуральное число ");
 
-    const auto second = read_number("Введите второе натуральное число ");
+        const auto second = read_number("Введите второе натуральное число ");
 
-    const auto result = is_average_integer(first, second)
-        ? "Является"
-        : "Не является";
+        const auto result = is_average_integer(first, second)
+            ? "Является"
+            : "Не является";
 
-    std::cout << result << std::endl;
+        std::cout << result << std::endl;
 
-    return 0;
+        return 0;
+    }
+    catch (...)
+    {
+        return 1;
+    }
 }
 
 int read_number(const std::string& message)
