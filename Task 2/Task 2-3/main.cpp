@@ -32,14 +32,11 @@ int main()
 
     const auto second = read_number("Введите второе натуральное число ");
 
-    if (is_average_integer(first, second))
-    {
-        std::cout << "Является" << std::endl;
-    }
-    else
-    {
-        std::cout << "Не является" << std::endl;
-    }
+    const auto result = is_average_integer(first, second)
+        ? "Является"
+        : "Не является";
+
+    std::cout << result << std::endl;
 
     return 0;
 }
@@ -50,4 +47,10 @@ int read_number(const std::string& message)
     int number = 0;
     std::cin >> number;
     return number;
+}
+
+
+bool is_average_integer(const int first_number, const int second_number)
+{
+    return true;
 }
