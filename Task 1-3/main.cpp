@@ -39,12 +39,12 @@ int main()
     return 0;
 }
 
-double getVolume(double angle, double radius)
+double getVolume(const double angle, const double radius)
 {
     return 0.0;
 }
 
-double getSurface(double angle, double radius)
+double getSurface(const double angle, const double radius)
 {
     return 0.0;
 }
