@@ -36,6 +36,7 @@ int main()
         {
             std::cout << "x = " << x << " y = не существует" << "\n";
         }
+
         x += STEP;
     }
     return 0;
